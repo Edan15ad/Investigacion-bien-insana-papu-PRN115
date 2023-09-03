@@ -12,3 +12,6 @@ namespace PinvestigacionPRN115
 {
     public partial class Calculadora : Form
     {
+
+    }
+}
