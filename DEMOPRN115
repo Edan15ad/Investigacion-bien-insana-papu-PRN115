@@ -10,8 +10,25 @@ using System.Windows.Forms;
 
 namespace PinvestigacionPRN115
 {
+
+double Numero1 = 0, Numero2 = 0;
+        char Operador;
     public partial class Calculadora : Form
     {
+        public Calculadora()
+        {
+            InitializeComponent();
+        }
+
+        private void  agregarNumero(object sender, EventArgs e)
+        {
+            var boton = ((Button)sender);
+
+            if (txtResultado.Text == "0")
+                txtResultado.Text = "";
+
+            txtResultado.Text += boton.Text;
+        }
 
     }
 }
